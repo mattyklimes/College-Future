@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>College Future</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+   <main>
+
+
+
+     <div class="sidenav">
+
+       <button class="dropdown-btn">
+ <div class = "icon"></div>
+<div class = "icon"></div>
+<div class = "icon"></div>
+         <i class="fa fa-caret-down"></i>
+       </button>
+       <div class="dropdown-container">
+         <a href="#">Home</a>
+         <br>
+         <a href="#">Taco</a>
+         <br>
+         <a href="#">suh</a>
+       </div>
+     </div>
+
+     <script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+
+
+  <section class="main-header">
+
+  <h4 class="second-header">College</h4>
+    <h4 class="third-header">Future</h4>
+<br> <br> <br> <br> <br> <br><br> <br> <br>
+  <h1 class="first-header">Find Your Dream School</h1>
+
+
+  <center><form autocomplete="off" action="/action_page.php">
+    <div class="autocomplete" style="width:300px;">
+      <input id="myInput" type="text" name="myCountry" placeholder="Enter a college or university...">
+    </div>
+  </form></center>
+
+
+<br> <br> <br>
+
+<center><img class="arrow" src ="img/arrow.svg" alt="arrow"></center>
+
+</section>
+
+
+<section class = "this-does-work">
+
+    <p class="first-p">Welcome to College Future!</p>
+    <br>
+    <p>Virtually tour our all of your dream schools, right here, righ now!</p>
+</section>
+
+<br><br><br><br>
+
+<section class = "this-does-work-two">
+      <p class="first-p">What is College Future?</p>
+    <p>College Future is an online platform for colleges to share their unique cultures with the world.
+</p>
+
+
+<br><br><br><br>
+<br><br><br><br>
+
+
+  <p class="first-p">How Does It Work?</p>
+  <p>Colleges and Universities create profiles on this website that contain
+</p>
+</section>
+
+
+
+
+
+    <br>
+
+
+
+
+  </main>
+
+
+
+
+
+
+</body>
+  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>
+<footer class="footer">
+  <br><br>
+<p>&copy;2017, College Future</p>
+<br><br>
+</footer>
+
+  </html>

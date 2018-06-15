@@ -1,0 +1,250 @@
+*{
+margin: 0px;
+padding: 0px;
+ box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Abolition Regular';
+  src: url('../fonts/abolition-regular-webfont.eot');
+  src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/abolition-regular-webfont.woff') format('woff'),
+       url('../fonts/abolition-regular-webfont.ttf') format('truetype');
+}
+
+h1, h2, h3{
+  font-family:'Bold';
+}
+
+.icon {
+    width: 45px;
+    height: 8px;
+    background-color: #A9A9A9;
+    margin: 8px 0;
+}
+.sidenav {
+    height: 420px;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+    padding: 15px 30px 15px 30px;
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+.sidenav a {
+
+    margin-left: 18px;
+     background-color: #F08080;
+
+}
+
+/* On mouse-over */
+.sidenav a:hover{
+    background-color: pink;
+
+}
+
+/* Main content */
+.main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+    color: pink;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+    display: none;
+    background-color: none;
+    padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+
+
+
+
+
+.autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+  margin-bottom: 90px;
+
+}
+input {
+  border: 2px solid #AECBEB;
+  border-radius: 2%;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+input[type=submit] {
+  background-color: DodgerBlue;
+  color: #fff;
+}
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9;
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: DodgerBlue;
+  color: #ffffff;
+}
+
+
+.logo{
+width:24%;
+height: 80px;
+float: left;
+margin-right:-30px;
+}
+
+.main-header{
+ padding-top: 45px;
+ height: 800px;
+ background:
+   linear-gradient(0deg, #fff, transparent 100%),
+   url('../img/sky2.jpg') no-repeat center;
+ background-size: cover;
+}
+
+.this-does-work{
+ padding-top: 45px;
+ height: 200px;
+ background:
+   white;
+ background-size: cover;
+}
+
+.this-does-work-two{
+padding-top: 100px;
+height: 600px;
+background: linear-gradient(#00FFFF, #37ff00 300%);
+ background-size: cover;
+}
+
+
+.first-header{
+   font-size: 3rem; /* 90px/16px  */
+  color: white;
+  text-transform: uppercase;
+  line-height: 1.5;
+  letter-spacing: 3px;
+  font-family:'Bold';
+  text-align:center;
+  margin-bottom: 40px;
+  text-shadow: 0 1px 10px black;
+}
+
+.second-header{
+    word-spacing: 10px;
+     letter-spacing: 7px;
+  margin-top: -20px;
+   font-size: 2.125rem; /* 90px/16px  */
+  color: white;
+  text-transform: uppercase;
+  line-height: 1.0;
+  text-align:center;
+  text-shadow: 0 1px 10px black;
+}
+
+.third-header{
+    margin-top: 5px;
+  letter-spacing: 7px;
+   font-size: 2.125rem; /* 90px/16px  */
+  color: white;
+  text-transform: uppercase;
+  line-height: 1.0;
+  text-align:center;
+  text-shadow: 0 1px 10px black;
+}
+
+.arrow{
+ width:60px;
+ display:block;
+ margin:auto;
+margin-bottom:150px;
+}
+
+
+
+p{
+  margin-left:19%;
+    margin-right:19%;
+  font-size: 1.6rem; /* 90px/16px  */
+  color: black;
+  line-height: 1.3;
+  text-align:center;
+}
+
+.first-p{
+  font-size: 2.5rem;
+}
+
+
+p>a{
+color:#FF8C00;
+text-decoration:none;
+}
+
+p>a:hover{
+color:red;
+}
+
+p>a:focus{
+color:darkred;
+}
+
+hr{
+  margin-left:20%;
+  margin-right:20%;
+}
